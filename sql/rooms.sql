@@ -1,0 +1,6 @@
+CREATE TABLE rooms (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  type ENUM('group', 'private') DEFAULT 'group',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
